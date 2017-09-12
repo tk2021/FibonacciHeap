@@ -53,5 +53,40 @@ public class FibonacciHeapTests {
         Assert.assertTrue(fibonacciHeap.size() == 6);
     }
 
-    
+    @Test
+    public void unionNewMinTest(){
+        FibonacciHeap heap = unionTwoHeaps();
+        Assert.assertTrue(heap.getMin().getValue() == 1);
+    }
+
+    @Test
+    public void unionNewSizeTest(){
+        FibonacciHeap heap = unionTwoHeaps();
+        Assert.assertTrue(heap.size() == 4);
+    }
+
+    @Test
+    public void unionNullHeapTest(){
+        FibonacciHeap heap1 = new FibonacciHeap();
+        heap1.insert(new Node(1));
+
+        FibonacciHeap heap = FibonacciHeap.unionHeaps(heap1, new FibonacciHeap());
+
+        Assert.assertTrue(heap.getMin().getValue() == 1);
+    }
+
+    public FibonacciHeap unionTwoHeaps(){
+        FibonacciHeap heap1 = new FibonacciHeap();
+        FibonacciHeap heap2 = new FibonacciHeap();
+
+        heap1.insert(new Node(5));
+        heap1.insert(new Node(3));
+
+        heap2.insert(new Node(1));
+        heap2.insert(new Node(6));
+
+        return FibonacciHeap.unionHeaps(heap1, heap2);
+    }
+
+
 }

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80a25de0-77c9-41fe-a7ce-ea67b2d62b48" name="Default" comment="" />
+    <list default="true" id="80a25de0-77c9-41fe-a7ce-ea67b2d62b48" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" afterPath="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FibonacciHeap.java" afterPath="$PROJECT_DIR$/src/FibonacciHeap.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +22,7 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="306">
               <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding>
                 <element signature="e#736#737#0" expanded="true" />
@@ -62,8 +65,8 @@
       <file leaf-file-name="FibonacciHeapTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/FibonacciHeapTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+            <state relative-caret-position="356">
+              <caret line="77" column="41" lean-forward="true" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,15 +77,17 @@
       <file leaf-file-name="FibonacciHeap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="322">
+              <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
               <folding>
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,6 +101,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -113,8 +121,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Tests/NodeTests.java" />
-        <option value="$PROJECT_DIR$/src/FibonacciHeap.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
+        <option value="$PROJECT_DIR$/src/FibonacciHeap.java" />
         <option value="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" />
       </list>
     </option>
@@ -125,6 +133,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -204,70 +213,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.FibonacciHeapTests.getSizeTest">
-    <configuration default="false" name="NodeTests.numberOfChildren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FibonacciHeap" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NodeTests" />
-      <option name="METHOD_NAME" value="numberOfChildren" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="FibonacciHeapTests.fibonacciHeapCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FibonacciHeap" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
-      <option name="METHOD_NAME" value="fibonacciHeapCreation" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="FibonacciHeapTests.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FibonacciHeap" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
-      <option name="METHOD_NAME" value="insertTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.FibonacciHeapTests.unionNullHeapTest">
     <configuration default="false" name="FibonacciHeapTests.getMinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FibonacciHeap" />
@@ -297,6 +243,69 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
       <option name="METHOD_NAME" value="getSizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FibonacciHeapTests.unionNewMinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FibonacciHeap" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
+      <option name="METHOD_NAME" value="unionNewMinTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FibonacciHeapTests.unionNewSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FibonacciHeap" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
+      <option name="METHOD_NAME" value="unionNewSizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FibonacciHeapTests.unionNullHeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FibonacciHeap" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
+      <option name="METHOD_NAME" value="unionNullHeapTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -534,19 +543,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.NodeTests.numberOfChildren" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.fibonacciHeapCreation" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.insertTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getMinTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getSizeTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getMinTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getSizeTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.unionNewMinTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.unionNewSizeTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.unionNullHeapTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getSizeTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getMinTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.insertTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.fibonacciHeapCreation" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.NodeTests.numberOfChildren" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.unionNullHeapTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.unionNewSizeTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.unionNewMinTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getSizeTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.getMinTest" />
       </list>
     </recent_temporary>
   </component>
@@ -564,26 +573,11 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FibonacciHeapTests_fibonacciHeapCreation - 2017.09.12 at 12h 37m 11s.xml">
-      <configuration name="FibonacciHeapTests.fibonacciHeapCreation" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FibonacciHeapTests_getMinTest - 2017.09.12 at 12h 47m 33s.xml">
       <configuration name="FibonacciHeapTests.getMinTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FibonacciHeapTests_getSizeTest - 2017.09.12 at 12h 48m 18s.xml">
       <configuration name="FibonacciHeapTests.getSizeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_insertTest - 2017.09.12 at 12h 38m 10s.xml">
-      <configuration name="FibonacciHeapTests.insertTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_insertTest - 2017.09.12 at 12h 38m 54s.xml">
-      <configuration name="FibonacciHeapTests.insertTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_insertTest - 2017.09.12 at 12h 40m 09s.xml">
-      <configuration name="FibonacciHeapTests.insertTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_insertTest - 2017.09.12 at 12h 40m 34s.xml">
-      <configuration name="FibonacciHeapTests.insertTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FibonacciHeapTests_insertTest - 2017.09.12 at 12h 42m 12s.xml">
       <configuration name="FibonacciHeapTests.insertTest" configurationId="JUnit" />
@@ -593,6 +587,21 @@
     </history-entry>
     <history-entry file="FibonacciHeapTests_insertTest - 2017.09.12 at 12h 44m 30s.xml">
       <configuration name="FibonacciHeapTests.insertTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_unionNewMinTest - 2017.09.12 at 15h 38m 16s.xml">
+      <configuration name="FibonacciHeapTests.unionNewMinTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_unionNewSizeTest - 2017.09.12 at 15h 39m 58s.xml">
+      <configuration name="FibonacciHeapTests.unionNewSizeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_unionNullHeapTest - 2017.09.12 at 15h 41m 59s.xml">
+      <configuration name="FibonacciHeapTests.unionNullHeapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_unionNullHeapTest - 2017.09.12 at 15h 42m 01s.xml">
+      <configuration name="FibonacciHeapTests.unionNullHeapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_unionNullHeapTest - 2017.09.12 at 15h 44m 10s.xml">
+      <configuration name="FibonacciHeapTests.unionNullHeapTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -609,7 +618,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -633,7 +642,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -653,24 +664,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="306">
           <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding>
             <element signature="e#736#737#0" expanded="true" />
@@ -695,10 +691,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/FibonacciHeapTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        <state relative-caret-position="356">
+          <caret line="77" column="41" lean-forward="true" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
