@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * Created by TomasK on 9/12/2017.
@@ -158,53 +159,51 @@ public class FibonacciHeap {
         int k = 0;
         do{
             Node temp = counter;
-            int deg = temp.getDegree();
-            System.out.println("deg " + deg + " size " + size() + " value " + temp.getValue());
-            while(array[deg] != null){
-                Node degNode = array[deg];
-                if(degNode.getValue() >= temp.getValue()){
-                    if(start == degNode) {
-                            start = start.getLeft();
-                    }
-                    Node left = degNode.getLeft();
-                    Node right = degNode.getRight();
+            AtomicReference<Node> refCounter = new AtomicReference<>(counter);
+            AtomicReference<Node> refStart = new AtomicReference<>(start);
+//            int deg = temp.getDegree();
+//            System.out.println("deg " + deg + " size " + size() + " value " + temp.getValue());
+//            //mergeNodeOfSameDegree(temp, array, ref counter, ref start)
+//
+//            while(array[deg] != null){
+//                Node degNode = array[deg];
+//                if(degNode.getValue() >= temp.getValue()){
+//                    if(start == degNode) {
+//                            start = start.getRight();
+//                    }
+//                    removeChild(degNode);
+//                    temp.setChild(degNode);
+//                }
+//                else{
+//                    counter = temp.getRight();
+//                    removeChild(temp);
+//                    degNode.setChild(temp);
+//                    temp = counter;
+//                }
+//                array[deg] = null;
+//                deg++;
+//
+//                System.out.println("ARRAY: ");
+//                for(int i = 0; i < array.length; i++)
+//                    System.out.print((array[i] == null ? -1 : array[i].getValue()));
+//                System.out.println("\n");
+//            }
+//            array[deg] = temp;
+//
+//            System.out.println("ARRAY: ");
+//            for(int i = 0; i < array.length; i++)
+//                System.out.print((array[i] == null ? -1 : array[i].getValue()));
+//            System.out.println("\n");
+//
+//            counter = counter.getRight();
+//
+//
+//            System.out.println("print tree:\n");
+//            printTree(getMin());
 
-                    left.setRight(right);
-                    right.setLeft(left);
+            mergeNodeOfSameDegree(temp, array, refCounter, refStart);
 
-                    temp.setChild(degNode);
-                }
-                else{
-                    Node left = temp.getLeft();
-                    Node right = temp.getRight();
-
-                    left.setRight(right);
-                    right.setLeft(left);
-
-                    degNode.setChild(temp);
-                    temp = degNode;
-                }
-                array[deg] = null;
-                deg++;
-
-                System.out.println("ARRAY: ");
-                for(int i = 0; i < array.length; i++)
-                    System.out.print((array[i] == null ? -1 : array[i].getValue()));
-                System.out.println("\n");
-            }
-            array[deg] = temp;
-
-            System.out.println("ARRAY: ");
-            for(int i = 0; i < array.length; i++)
-                System.out.print((array[i] == null ? -1 : array[i].getValue()));
-            System.out.println("\n");
-
-            counter = counter.getRight();
-
-            System.out.println("print tree:\n");
-            printTree(getMin());
-
-        }while(start != counter || ++k >= size());
+        }while(start != counter);
 
         setMin(null);
 
@@ -219,6 +218,30 @@ public class FibonacciHeap {
                 }
             }
         }
+    }
+
+    public void mergeNodeOfSameDegree(Node node, Node array [], AtomicReference<Node> start, AtomicReference<Node> current){
+        int degree = node.getDegree();
+        while(array[degree] != null){
+            Node nodeOfDegree = array[degree];
+            if(node.getValue() < nodeOfDegree.getValue()){
+                if(start.get() == nodeOfDegree){
+                    start.set(start.get().getRight());
+                }
+                removeChild(nodeOfDegree);
+                node.setChild(nodeOfDegree);
+            }
+            else{
+                current.set(current.get().getLeft());
+                removeChild(node);
+                nodeOfDegree.setChild(node);
+                node = nodeOfDegree;
+            }
+            array[degree++] = null;
+
+        }
+        array[degree] = node;
+        current.set(current.get().getRight());
     }
 
     public static FibonacciHeap unionHeaps(FibonacciHeap heap1, FibonacciHeap heap2){

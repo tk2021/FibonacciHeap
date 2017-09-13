@@ -3,6 +3,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * Created by TomasK on 9/12/2017.
@@ -80,6 +81,49 @@ public class FibonacciHeapTests {
 
 
         Assert.assertTrue(min.getValue() == 1 && size - heap.size() == 1 && heap.getMin().getValue() == 3);
+    }
+
+    @Test
+    public void mergeRootNodesOfSameDegreeTest(){
+        FibonacciHeap heap = new FibonacciHeap();
+
+        Node child1 = new Node(0);
+        Node child2 = new Node(1);
+        Node child3 = new Node(2);
+
+        heap.insert(child1);
+        heap.insert(child2);
+        heap.insert(child3);
+
+        heap.printTree(heap.getMin());
+
+        Node array [] = new Node [heap.size() + 1];
+
+        for(int i = 0; i < array.length ; i++)
+            array[i] = null;
+
+        AtomicReference<Node> start = new AtomicReference<>(child1);
+        AtomicReference<Node> current = new AtomicReference<>(child1);
+        heap.mergeNodeOfSameDegree(heap.getMin(), array, start, current);
+
+        Assert.assertTrue(array[0] == child1);
+        Assert.assertTrue("start did not stay the same", start.get() == child1);
+        Assert.assertTrue("Current did not update", current.get() == child2);
+
+        heap.mergeNodeOfSameDegree(child2, array, start, current);
+
+        Assert.assertTrue(array[0] == null);
+        Assert.assertTrue("start did not stay the same", start.get() == child1);
+        Assert.assertTrue("Current did not update", current.get() == child3);
+        Assert.assertTrue("child1 did not have children", child1.getChild() != null);
+
+        heap.printTree(child1);
+
+        heap.mergeNodeOfSameDegree(child3, array, start, current);
+
+        heap.printTree(child1);
+
+
     }
 
     @Test
@@ -175,7 +219,7 @@ public class FibonacciHeapTests {
             Node temp = heap.getMin();
             Node child = temp.getChild();
 
-            for(int j = 0; j < 5; j++){
+            for(int j = 0; j < 5 && child != null; j++){
                 System.out.print(child.getValue() + " ");
                 child = child.getRight();
             }

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a25de0-77c9-41fe-a7ce-ea67b2d62b48" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" afterPath="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FibonacciHeap.java" afterPath="$PROJECT_DIR$/src/FibonacciHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Node.java" afterPath="$PROJECT_DIR$/src/Node.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +19,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="748">
               <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#901#902#0" expanded="true" />
@@ -55,12 +55,10 @@
       <file leaf-file-name="NodeTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/NodeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+            <state relative-caret-position="152">
+              <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,12 +67,10 @@
       <file leaf-file-name="FibonacciHeapTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/FibonacciHeapTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="221" column="49" lean-forward="false" selection-start-line="221" selection-start-column="49" selection-end-line="221" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3810#3819#0" expanded="true" />
-                <element signature="e#5070#5079#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,20 +79,10 @@
       <file leaf-file-name="FibonacciHeap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#7471#7472#0" expanded="true" />
-                <element signature="e#7498#7499#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +122,8 @@
       <list>
         <option value="$PROJECT_DIR$/Tests/NodeTests.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
-        <option value="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" />
         <option value="$PROJECT_DIR$/src/FibonacciHeap.java" />
+        <option value="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" />
       </list>
     </option>
   </component>
@@ -163,8 +149,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,7 +204,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +213,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.FibonacciHeapTests.popMinTest">
+  <component name="RunManager" selected="JUnit.FibonacciHeapTests.popAllTest">
     <configuration default="false" name="FibonacciHeapTests.popAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FibonacciHeap" />
@@ -270,27 +256,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="FibonacciHeapTests.removeChildFromChildNonEmptyListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FibonacciHeap" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
-      <option name="METHOD_NAME" value="removeChildFromChildNonEmptyListTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="FibonacciHeapTests.removeAllChildrenFromNodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FibonacciHeap" />
@@ -320,6 +285,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
       <option name="METHOD_NAME" value="popMinTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FibonacciHeap" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FibonacciHeapTests" />
+      <option name="METHOD_NAME" value="mergeRootNodesOfSameDegreeTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -559,17 +545,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.popAllTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeAllChildrenAndPutThemUnderRootTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeChildFromChildNonEmptyListTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeAllChildrenFromNodeTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.popMinTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeAllChildrenFromNodeTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.popMinTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.popMinTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.popAllTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeAllChildrenAndPutThemUnderRootTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeAllChildrenFromNodeTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeChildFromChildNonEmptyListTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.popAllTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.popMinTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeAllChildrenAndPutThemUnderRootTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FibonacciHeapTests.removeAllChildrenFromNodeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -587,35 +573,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FibonacciHeapTests_popAllTest - 2017.09.13 at 00h 46m 29s.xml">
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 21m 17s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 22m 01s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 22m 16s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 44m 44s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 46m 36s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 47m 14s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 47m 47s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_mergeRootNodesOfSameDegreeTest - 2017.09.13 at 11h 49m 59s.xml">
+      <configuration name="FibonacciHeapTests.mergeRootNodesOfSameDegreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FibonacciHeapTests_popAllTest - 2017.09.13 at 11h 50m 10s.xml">
       <configuration name="FibonacciHeapTests.popAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FibonacciHeapTests_popAllTest - 2017.09.13 at 00h 48m 15s.xml">
+    <history-entry file="FibonacciHeapTests_popAllTest - 2017.09.13 at 11h 51m 27s.xml">
       <configuration name="FibonacciHeapTests.popAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_popAllTest - 2017.09.13 at 00h 50m 10s.xml">
-      <configuration name="FibonacciHeapTests.popAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_popAllTest - 2017.09.13 at 00h 52m 16s.xml">
-      <configuration name="FibonacciHeapTests.popAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_popMinTest - 2017.09.13 at 00h 52m 40s.xml">
-      <configuration name="FibonacciHeapTests.popMinTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_popMinTest - 2017.09.13 at 00h 54m 36s.xml">
-      <configuration name="FibonacciHeapTests.popMinTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_removeAllChildrenAndPutThemUnderRootTest - 2017.09.13 at 00h 43m 00s.xml">
-      <configuration name="FibonacciHeapTests.removeAllChildrenAndPutThemUnderRootTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_removeAllChildrenAndPutThemUnderRootTest - 2017.09.13 at 00h 43m 57s.xml">
-      <configuration name="FibonacciHeapTests.removeAllChildrenAndPutThemUnderRootTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_removeAllChildrenAndPutThemUnderRootTest - 2017.09.13 at 00h 45m 41s.xml">
-      <configuration name="FibonacciHeapTests.removeAllChildrenAndPutThemUnderRootTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FibonacciHeapTests_removeAllChildrenAndPutThemUnderRootTest - 2017.09.13 at 00h 46m 19s.xml">
-      <configuration name="FibonacciHeapTests.removeAllChildrenAndPutThemUnderRootTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -631,34 +617,34 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28641573" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -669,24 +655,24 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FibonacciHeap.java</url>
-          <line>101</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FibonacciHeap.java</url>
-          <line>204</line>
+          <line>163</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FibonacciHeap.java</url>
-          <line>70</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -695,53 +681,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tests/NodeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="301" column="24" lean-forward="false" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="748">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#901#902#0" expanded="true" />
@@ -769,34 +711,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/NodeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/FibonacciHeapTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
+        <state relative-caret-position="1377">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3810#3819#0" expanded="true" />
-            <element signature="e#5070#5079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#7471#7472#0" expanded="true" />
-            <element signature="e#7498#7499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="301" column="24" lean-forward="false" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1571#1572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/NodeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/FibonacciHeapTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="221" column="49" lean-forward="false" selection-start-line="221" selection-start-column="49" selection-end-line="221" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
