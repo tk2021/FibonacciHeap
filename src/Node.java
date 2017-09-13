@@ -13,9 +13,15 @@ public class Node{
     }
 
     public void setChild(Node child){
+        if(child == null) {
+            this.child = null;
+            return;
+        }
         this.degree++;
         if(this.child == null) {
             this.child = child;
+            this.child.left = child;
+            this.child.right = child;
         }
         else{
             Node leftSibling = this.child.getLeft();
@@ -25,6 +31,10 @@ public class Node{
             child.setLeft(leftSibling);
         }
         child.setParent(this);
+    }
+
+    public void changeChild(Node child){
+        this.child = child;
     }
 
     public void setParent(Node parent){
@@ -57,6 +67,10 @@ public class Node{
 
     public int getDegree(){
         return this.degree;
+    }
+
+    public void decrementDegree(){
+        this.degree--;
     }
 
     public int getValue(){

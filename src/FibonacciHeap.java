@@ -1,3 +1,6 @@
+import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
+
 /**
  * Created by TomasK on 9/12/2017.
  */
@@ -36,6 +39,185 @@ public class FibonacciHeap {
         else{
             if(min.getValue() > x.getValue())
                 setMin(x);
+        }
+    }
+
+    //remove a child from a child list updating the parent's child pointer
+    public void removeChild(Node node){
+        Node left = node.getLeft();
+        Node right = node.getRight();
+
+        if(left == node){
+            node.getParent().changeChild(null);
+            node.setLeft(node);
+            node.setRight(node);
+            return;
+        }
+        else{
+            left.setRight(right);
+            right.setLeft(left);
+            node.setLeft(node);
+            node.setRight(node);
+        }
+        if(node.getParent().getChild() == node) {
+            node.getParent().changeChild(left);
+        }
+    }
+
+    public void moveAllChildrenToRoot(Node node){
+        Node poppedChild = node.getChild();
+        if(poppedChild != null) {
+            while (poppedChild.getRight() != poppedChild) {
+                System.out.println("stuck in here for a WHILE " + poppedChild.getValue() + " " + poppedChild.getRight().getValue());
+                Node temp = poppedChild.getRight();
+                moveChildToRoot(poppedChild);
+                poppedChild = temp;
+
+                System.out.println("printing from the while in pop");
+                printTree(getMin());
+            }
+            insert(poppedChild);
+            node.changeChild(null);
+            decrementSize();
+
+            System.out.println("printing in pop after the while last insert");
+            printTree(getMin());
+        }
+    }
+
+    public void moveChildToRoot(Node node){
+        removeChild(node);
+        insert(node);
+        decrementSize();
+    }
+
+    public Node pop(){
+        Node poppedNode = getMin();
+        if(poppedNode == null)
+            return null;
+//        Node poppedChild = poppedNode.getChild();
+//        if(poppedChild != null) {
+//            while (poppedChild.getRight() != poppedChild) {
+//                System.out.println("stuck in here for a WHILE " + poppedChild.getValue() + " " + poppedChild.getRight().getValue());
+//                Node temp = poppedChild.getRight();
+//                removeChild(poppedChild);
+//                insert(poppedChild);
+//                decrementSize();
+//                poppedChild = temp;
+//
+//                System.out.println("printing from the while in pop");
+//                printTree(getMin());
+//            }
+//            insert(poppedChild);
+//            poppedNode.changeChild(null);
+//            decrementSize();
+//
+//            System.out.println("printing in pop after the while last insert");
+//            printTree(getMin());
+//        }
+
+        moveAllChildrenToRoot(poppedNode);
+
+//        Node left = poppedNode.getLeft();
+//        Node right = poppedNode.getRight();
+//
+//        left.setRight(right);
+//        right.setLeft(left);
+
+        removeChild(poppedNode);
+
+
+        setMin(dummyRoot.getChild());
+        consolidate();
+
+        decrementSize();
+        this.dummyRoot.changeChild(getMin());
+
+        return poppedNode;
+    }
+
+    private void consolidate(){
+        System.out.println("inside consolidate");
+        printTree(getMin());
+
+        Node array [] = new Node [size() + 1];
+
+        for(int i = 0; i < array.length ; i++)
+            array[i] = null;
+
+        Node start = getMin();
+        Node counter = getMin();
+
+
+        Node iterateNode = getMin();
+        for(int i = 0; i < 5; i++){
+            System.out.println(iterateNode.getValue() + " " + iterateNode.getDegree());
+            iterateNode = iterateNode.getRight();
+        }
+
+        int k = 0;
+        do{
+            Node temp = counter;
+            int deg = temp.getDegree();
+            System.out.println("deg " + deg + " size " + size() + " value " + temp.getValue());
+            while(array[deg] != null){
+                Node degNode = array[deg];
+                if(degNode.getValue() >= temp.getValue()){
+                    if(start == degNode) {
+                            start = start.getLeft();
+                    }
+                    Node left = degNode.getLeft();
+                    Node right = degNode.getRight();
+
+                    left.setRight(right);
+                    right.setLeft(left);
+
+                    temp.setChild(degNode);
+                }
+                else{
+                    Node left = temp.getLeft();
+                    Node right = temp.getRight();
+
+                    left.setRight(right);
+                    right.setLeft(left);
+
+                    degNode.setChild(temp);
+                    temp = degNode;
+                }
+                array[deg] = null;
+                deg++;
+
+                System.out.println("ARRAY: ");
+                for(int i = 0; i < array.length; i++)
+                    System.out.print((array[i] == null ? -1 : array[i].getValue()));
+                System.out.println("\n");
+            }
+            array[deg] = temp;
+
+            System.out.println("ARRAY: ");
+            for(int i = 0; i < array.length; i++)
+                System.out.print((array[i] == null ? -1 : array[i].getValue()));
+            System.out.println("\n");
+
+            counter = counter.getRight();
+
+            System.out.println("print tree:\n");
+            printTree(getMin());
+
+        }while(start != counter || ++k >= size());
+
+        setMin(null);
+
+        for(int i = 0; i < array.length; i++){
+            if(array[i] != null){
+                if(getMin() == null)
+                    setMin(array[i]);
+                else{
+                    insert(array[i]);
+                    if(array[i].getValue() < getMin().getValue())
+                        setMin(array[i]);
+                }
+            }
         }
     }
 
@@ -79,6 +261,41 @@ public class FibonacciHeap {
 
         return unionOfHeaps;
 
+    }
+
+    private void decrementSize(){
+        this.size--;
+    }
+
+
+    public void printTree(Node root){
+        Node temp = root;
+        if(temp == null)
+            return;
+
+        System.out.print(temp.getValue() + " ");
+
+        Queue<Node> queue = new LinkedList<>();
+
+        queue.add(temp.getChild());
+
+        temp = temp.getRight();
+
+        while(temp != root){
+            System.out.print(temp.getValue() + " ");
+            queue.add(temp.getChild());
+            temp = temp.getRight();
+        }
+
+        while(!queue.isEmpty()){
+            System.out.println();
+            temp = queue.remove();
+            if(temp != null)
+                System.out.print(temp.getParent().getValue() + ": ");
+            printTree(temp);
+        }
+
+        System.out.println();
     }
 
 
