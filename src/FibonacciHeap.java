@@ -125,20 +125,25 @@ public class FibonacciHeap {
 //        left.setRight(right);
 //        right.setLeft(left);
 
+        setMin(poppedNode.getLeft());
+
         removeChild(poppedNode);
 
 
-        setMin(dummyRoot.getChild());
         consolidate();
 
         decrementSize();
+        System.out.println("before dummyRoot.changeChild() " + getMin().getValue());
         this.dummyRoot.changeChild(getMin());
+        System.out.println("after dummyRoot.changeChild() " + getMin().getValue());
+
 
         return poppedNode;
     }
 
     private void consolidate(){
         System.out.println("inside consolidate");
+        System.out.println("size " + size());
         printTree(getMin());
 
         Node array [] = new Node [size() + 1];
@@ -156,72 +161,64 @@ public class FibonacciHeap {
             iterateNode = iterateNode.getRight();
         }
 
+        AtomicReference<Node> refCounter = new AtomicReference<>(counter);
+        AtomicReference<Node> refStart = new AtomicReference<>(start);
+
         int k = 0;
         do{
             Node temp = counter;
-            AtomicReference<Node> refCounter = new AtomicReference<>(counter);
-            AtomicReference<Node> refStart = new AtomicReference<>(start);
-//            int deg = temp.getDegree();
-//            System.out.println("deg " + deg + " size " + size() + " value " + temp.getValue());
-//            //mergeNodeOfSameDegree(temp, array, ref counter, ref start)
-//
-//            while(array[deg] != null){
-//                Node degNode = array[deg];
-//                if(degNode.getValue() >= temp.getValue()){
-//                    if(start == degNode) {
-//                            start = start.getRight();
-//                    }
-//                    removeChild(degNode);
-//                    temp.setChild(degNode);
-//                }
-//                else{
-//                    counter = temp.getRight();
-//                    removeChild(temp);
-//                    degNode.setChild(temp);
-//                    temp = counter;
-//                }
-//                array[deg] = null;
-//                deg++;
-//
-//                System.out.println("ARRAY: ");
-//                for(int i = 0; i < array.length; i++)
-//                    System.out.print((array[i] == null ? -1 : array[i].getValue()));
-//                System.out.println("\n");
-//            }
-//            array[deg] = temp;
-//
-//            System.out.println("ARRAY: ");
-//            for(int i = 0; i < array.length; i++)
-//                System.out.print((array[i] == null ? -1 : array[i].getValue()));
-//            System.out.println("\n");
-//
-//            counter = counter.getRight();
-//
-//
-//            System.out.println("print tree:\n");
-//            printTree(getMin());
-
             mergeNodeOfSameDegree(temp, array, refCounter, refStart);
+        }while(refStart.get() != refCounter.get() || ++k < size());
 
-        }while(start != counter);
+        updateMin(array);
+    }
 
+    public void updateMin(Node array []){
         setMin(null);
 
         for(int i = 0; i < array.length; i++){
             if(array[i] != null){
-                if(getMin() == null)
+                System.out.print(array[i].getValue());
+            }
+            else
+                System.out.print('x');
+        }
+        System.out.println();
+
+        for(int i = 0; i < array.length; i++){
+            if(array[i] != null){
+                if(getMin() == null) {
                     setMin(array[i]);
+                    System.out.println("ITS NOT NULL!!!!!!!!!! " + array[i].getValue() + " " + array[i].getDegree());
+
+                }
                 else{
-                    insert(array[i]);
-                    if(array[i].getValue() < getMin().getValue())
+                    if(array[i].getValue() < getMin().getValue()) {
                         setMin(array[i]);
+                        System.out.println("******************" + array[i].getValue() + " " + array[i].getDegree());
+
+                    }
                 }
             }
         }
     }
 
     public void mergeNodeOfSameDegree(Node node, Node array [], AtomicReference<Node> start, AtomicReference<Node> current){
+        node = current.get();
+
         int degree = node.getDegree();
+
+        System.out.println(node.getValue() + " " + node.getDegree());
+
+        Node child = node.getChild();
+        for(int i = 0; i < 50; i++){
+            if(child == null)
+                break;
+            System.out.print(child.getValue() + " ");
+            child = child.getRight();
+        }
+        System.out.println();
+
         while(array[degree] != null){
             Node nodeOfDegree = array[degree];
             if(node.getValue() < nodeOfDegree.getValue()){

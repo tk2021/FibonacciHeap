@@ -127,6 +127,87 @@ public class FibonacciHeapTests {
     }
 
     @Test
+    public void mergeRootNodesOfSameDegreeArrayTest(){
+        FibonacciHeap heap = new FibonacciHeap();
+
+        Node fauxMin = new Node(6);
+
+        heap.insert(new Node(5));
+        heap.insert(new Node(3));
+        heap.insert(new Node(5));
+        heap.insert(new Node(3));
+        heap.insert(fauxMin);
+
+        heap.setMin(fauxMin);
+
+
+        heap.printTree(heap.getMin());
+
+        Node array [] = new Node [heap.size() + 1];
+
+        for(int i = 0; i < array.length ; i++)
+            array[i] = null;
+
+        AtomicReference<Node> start = new AtomicReference<>(heap.getMin());
+        AtomicReference<Node> current = new AtomicReference<>(heap.getMin());
+
+        do {
+            heap.mergeNodeOfSameDegree(current.get(), array, start, current);
+            printArray(array);
+        }while(current.get() != start.get());
+
+
+
+
+//        Assert.assertTrue(array[0].getValue() == 5 && array[2].getValue() == 3);
+        heap.printTree(heap.getMin());
+
+
+    }
+
+    public void printArray(Node array []){
+        System.out.println();
+
+        for(int i = 0 ; i < array.length; i++) {
+            if(array[i] != null)
+                System.out.print(array[i].getValue());
+            else
+                System.out.print('x');
+
+        }
+        System.out.println();
+    }
+
+    @Test
+    public void mergeOneRootNodesOfSameDegreeTest(){
+        FibonacciHeap heap = new FibonacciHeap();
+
+        Node child1 = new Node(0);
+
+
+        heap.insert(child1);
+
+
+        heap.printTree(heap.getMin());
+
+        Node array [] = new Node [heap.size() + 1];
+
+        for(int i = 0; i < array.length ; i++)
+            array[i] = null;
+
+        AtomicReference<Node> start = new AtomicReference<>(child1);
+        AtomicReference<Node> current = new AtomicReference<>(child1);
+        heap.mergeNodeOfSameDegree(heap.getMin(), array, start, current);
+
+        Assert.assertTrue(array[0] == child1);
+        Assert.assertTrue("start did not stay the same", start.get() == child1);
+        Assert.assertTrue("Current did not update", current.get() == child1);
+
+
+
+    }
+
+    @Test
     public void removeChildFromChildListTest(){
         FibonacciHeap heap = makeHeap();
 
@@ -208,11 +289,45 @@ public class FibonacciHeapTests {
     }
 
     @Test
+    public void updateMinTest(){
+        Node array [] = new Node [6];
+
+        array[0] = new Node(3);
+
+        array[3] = new Node(2);
+
+        array[2] = new Node(1);
+
+        FibonacciHeap heap = new FibonacciHeap();
+
+        heap.updateMin(array);
+
+        Assert.assertTrue(heap.getMin().getValue() == 1);
+    }
+
+    @Test
     public void popAllTest(){
         FibonacciHeap heap = makeHeap();
         ArrayList<Integer> list = new ArrayList<>();
 
-        for(int i = 0; i < 6; i++) {
+
+
+        Collection<Integer> collection = new ArrayList<Integer>();
+        collection.add(5);
+        collection.add(5);
+        collection.add(3);
+        collection.add(3);
+        collection.add(1);
+        collection.add(6);
+
+        for(int i = 0; i < 50; i++){
+            int k = (int)(Math.random() * 100);
+            collection.add(k);
+            list.add(k);
+            heap.insert(new Node(k));
+        }
+
+        while(heap.size() > 0) {
             list.add(heap.pop().getValue());
             System.out.println("\nnew min: " + heap.getMin().getValue());
 
@@ -234,13 +349,8 @@ public class FibonacciHeapTests {
             System.out.println("\n");
         }
 
-        Collection<Integer> collection = new ArrayList<Integer>();
-        collection.add(5);
-        collection.add(5);
-        collection.add(3);
-        collection.add(3);
-        collection.add(1);
-        collection.add(6);
+        for(Integer value : list)
+            System.out.println(value);
 
         Assert.assertTrue(list.containsAll(collection));
     }
