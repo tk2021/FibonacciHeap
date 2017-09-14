@@ -35,7 +35,9 @@ public class CircularDoublyLinkedList {
         return end;
     }
 
-    public void insert(ListNode node){
+    public void insert(HeapNode data){
+        ListNode node = new ListNode(data);
+
         if(isEmpty()){
             start = node;
             end = node;
@@ -60,11 +62,13 @@ public class CircularDoublyLinkedList {
         incrementSize();
     }
 
-    public void remove(ListNode node){
+    public void remove(HeapNode data){
         if(size() == 0){
             return;
         }
-        if(!find(node))
+        ListNode node = find(data);
+
+        if(node == null)
             return;
         else if(size() == 1){
             start = null;
@@ -85,15 +89,15 @@ public class CircularDoublyLinkedList {
         decrementSize();
     }
 
-    public boolean find(ListNode node){
+    public ListNode find(HeapNode node){
         ListNode current = start;
         do{
-            if(node == current)
-                return true;
+            if(node == current.getData())
+                return current;
             current = current.next();
         }while(current != start);
 
-        return false;
+        return null;
     }
 
 }

@@ -7,7 +7,7 @@ import org.junit.Test;
  */
 public class CircularDoublyLinkedListTests {
     CircularDoublyLinkedList list;
-    ListNode testNode;
+    HeapNode testNode;
 
     @Before
     public void initializeList(){
@@ -23,12 +23,14 @@ public class CircularDoublyLinkedListTests {
     @Test
     public void insertAddToEmptyTest(){
         insertOneNodeIntoList();
-        Assert.assertTrue("start not updated to inserted node", list.start() == testNode);
-        Assert.assertTrue("start not pointing next to start", list.start().next() == testNode);
+        ListNode listTestNode = list.find(testNode);
+
+        Assert.assertTrue("start not updated to inserted node", list.start() == listTestNode);
+        Assert.assertTrue("start not pointing next to start", list.start().next() == listTestNode);
     }
 
     public void insertOneNodeIntoList(){
-        testNode = new ListNode(new HeapNode(1));
+        testNode = new HeapNode(11);
         list.insert(testNode);
     }
 
@@ -41,7 +43,9 @@ public class CircularDoublyLinkedListTests {
     @Test
     public void insertAddToOneMemberListTest(){
         insertTwoNodesIntoList();
-        Assert.assertTrue("end not updated to inserted node", list.end() == testNode);
+        ListNode listTestNode = list.find(testNode);
+
+        Assert.assertTrue("end not updated to inserted node", list.end() == listTestNode);
         Assert.assertTrue("start not pointing next to inserted node", list.start().next() == list.end() && list.start().prev() == list.end());
     }
 
@@ -54,7 +58,7 @@ public class CircularDoublyLinkedListTests {
     public void insertAddToPopulatedListSizeTest(){
         randomlyPopulateList();
         int size = list.size();
-        list.insert(new ListNode(new HeapNode(1)));
+        list.insert(new HeapNode(1));
 
         Assert.assertTrue("size not incremented by 1", list.size() == size + 1);
 
@@ -65,15 +69,17 @@ public class CircularDoublyLinkedListTests {
         randomlyPopulateList();
         insertOneNodeIntoList();
 
-        Assert.assertTrue("start.next() does not point to inserted node", list.start().next() == testNode);
-        Assert.assertTrue("node.prev() does not point to start", testNode.prev() == list.start());
-        Assert.assertTrue("start.next().next() does not point to inserted node .next()", list.start().next().next() == testNode.next());
+        ListNode listTestNode = list.find(testNode);
+
+        Assert.assertTrue("start.next() does not point to inserted node", list.start().next() == listTestNode);
+        Assert.assertTrue("node.prev() does not point to start", listTestNode.prev() == list.start());
+        Assert.assertTrue("start.next().next() does not point to inserted node .next()", list.start().next().next() == listTestNode.next());
 
     }
 
     @Test
     public void removeFromEmptyListSizeTest(){
-        list.remove(new ListNode(new HeapNode(4)));
+        list.remove(new HeapNode(4));
 
         Assert.assertTrue(list.size() == 0);
     }
@@ -98,25 +104,31 @@ public class CircularDoublyLinkedListTests {
     public void removeFromTwoNodeListTest(){
         insertTwoNodesIntoList();
         list.remove(testNode);
+        ListNode listTestNode = list.find(testNode);
 
-        Assert.assertTrue(list.start().next() != testNode && list.start().prev() != testNode);
+
+        Assert.assertTrue(list.start().next() != listTestNode && list.start().prev() != listTestNode);
     }
 
     @Test
     public void removeStartFromTwoNodeList(){
         insertOneNodeIntoList();
-        list.insert(new ListNode(new HeapNode(3)));
+        list.insert(new HeapNode(3));
         list.remove(testNode);
+        ListNode listTestNode = list.find(testNode);
 
-        Assert.assertTrue("start not updated", list.start() != testNode && list.start().next() == list.start());
+
+        Assert.assertTrue("start not updated", list.start() != listTestNode && list.start().next() == list.start());
     }
 
     @Test
     public void removeEndFromTwoNodeList(){
         insertTwoNodesIntoList();
         list.remove(testNode);
+        ListNode listTestNode = list.find(testNode);
 
-        Assert.assertTrue("end not updated", list.end() != testNode && list.end().next() == list.end());
+
+        Assert.assertTrue("end not updated", list.end() != listTestNode && list.end().next() == list.end());
     }
 
     @Test
@@ -133,14 +145,15 @@ public class CircularDoublyLinkedListTests {
         randomlyPopulateList();
         list.remove(testNode);
 
-        Assert.assertTrue("node not removed from list", !list.find(testNode));
+
+        Assert.assertTrue("node not removed from list", list.find(testNode) == null);
     }
 
     @Test
     public void removeNodeNotInPopulatedListSizeTest(){
         randomlyPopulateList();
         int size = list.size();
-        list.remove(new ListNode(new HeapNode(99)));
+        list.remove(new HeapNode(99));
 
         Assert.assertTrue(size == list.size());
     }
@@ -150,11 +163,11 @@ public class CircularDoublyLinkedListTests {
 
         for(int i = 0; i < numberOfNodes; i++){
             if(i == (numberOfNodes-1) % 200){
-                testNode = new ListNode(new HeapNode((int)Math.random() * 2000));
+                testNode = new HeapNode((int)Math.random() * 2000);
                 list.insert(testNode);
             }
             else{
-                list.insert(new ListNode(new HeapNode((int)Math.random() * 2000)));
+                list.insert(new HeapNode((int)Math.random() * 2000));
 
             }
         }

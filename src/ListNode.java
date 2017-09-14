@@ -27,4 +27,8 @@ public class ListNode {
     public void setPrev(ListNode node){
         this.prev = node;
     }
+
+    public HeapNode getData(){
+        return data;
+    }
 }
