@@ -19,6 +19,10 @@ public class CircularDoublyLinkedList {
         size++;
     }
 
+    private void decrementSize(){
+        size--;
+    }
+
     public boolean isEmpty(){
         return size() == 0;
     }
@@ -54,6 +58,42 @@ public class CircularDoublyLinkedList {
         }
 
         incrementSize();
+    }
+
+    public void remove(ListNode node){
+        if(size() == 0){
+            return;
+        }
+        if(!find(node))
+            return;
+        else if(size() == 1){
+            start = null;
+            end = null;
+        }
+        else{
+            if(start == node){
+                start = start.next();
+            }
+            else if(end == node){
+                end = end.prev();
+            }
+            ListNode temp = node.prev();
+            temp.setNext(node.next());
+            node.next().setPrev(temp);
+        }
+
+        decrementSize();
+    }
+
+    public boolean find(ListNode node){
+        ListNode current = start;
+        do{
+            if(node == current)
+                return true;
+            current = current.next();
+        }while(current != start);
+
+        return false;
     }
 
 }

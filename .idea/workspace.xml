@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a25de0-77c9-41fe-a7ce-ea67b2d62b48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CircularDoublyLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ListNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Node.java" afterPath="$PROJECT_DIR$/src/HeapNode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java" afterPath="$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CircularDoublyLinkedList.java" afterPath="$PROJECT_DIR$/src/CircularDoublyLinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HeapNode.java" afterPath="$PROJECT_DIR$/src/HeapNode.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,12 +21,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HeapNode.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HeapNode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HeapNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,8 +37,8 @@
       <file leaf-file-name="CircularDoublyLinkedListTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="84">
+              <caret line="135" column="75" lean-forward="false" selection-start-line="135" selection-start-column="75" selection-end-line="135" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#265#266#0" expanded="true" />
@@ -46,23 +48,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CircularDoublyLinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CircularDoublyLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CircularDoublyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-              <folding>
-                <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1428">
+              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,7 +61,7 @@
       <file leaf-file-name="ListNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="306">
               <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding>
                 <element signature="e#289#290#0" expanded="true" />
@@ -153,10 +144,10 @@
         <option value="$PROJECT_DIR$/Tests/FibonacciHeapTests.java" />
         <option value="$PROJECT_DIR$/Tests/NodeTests.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
-        <option value="$PROJECT_DIR$/src/HeapNode.java" />
         <option value="$PROJECT_DIR$/src/ListNode.java" />
-        <option value="$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java" />
         <option value="$PROJECT_DIR$/src/CircularDoublyLinkedList.java" />
+        <option value="$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java" />
+        <option value="$PROJECT_DIR$/src/HeapNode.java" />
       </list>
     </option>
   </component>
@@ -182,8 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -237,6 +226,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,15 +237,15 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.CircularDoublyLinkedListTests.insertAddToPopulatedListSizeTest">
-    <configuration default="false" name="CircularDoublyLinkedListTests.insertAddToEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CircularDoublyLinkedListTests.removeNodeFromPopulatedListTest">
+    <configuration default="false" name="CircularDoublyLinkedListTests.removeStartFromTwoNodeList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FibonacciHeap" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CircularDoublyLinkedListTests" />
-      <option name="METHOD_NAME" value="insertAddToEmptyTest" />
+      <option name="METHOD_NAME" value="removeStartFromTwoNodeList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -268,14 +259,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CircularDoublyLinkedListTests.insertAddToEmptySizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CircularDoublyLinkedListTests.removeEndFromTwoNodeList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FibonacciHeap" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CircularDoublyLinkedListTests" />
-      <option name="METHOD_NAME" value="insertAddToEmptySizeTest" />
+      <option name="METHOD_NAME" value="removeEndFromTwoNodeList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -289,35 +280,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CircularDoublyLinkedListTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CircularDoublyLinkedListTests.removeEndFromPopulatedListSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FibonacciHeap" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CircularDoublyLinkedListTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CircularDoublyLinkedListTests.insertAddToPopulatedListSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FibonacciHeap" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CircularDoublyLinkedListTests" />
-      <option name="METHOD_NAME" value="insertAddToPopulatedListSizeTest" />
+      <option name="METHOD_NAME" value="removeEndFromPopulatedListSizeTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -331,14 +301,35 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CircularDoublyLinkedListTests.insertAddToPopulatedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CircularDoublyLinkedListTests.removeNodeFromPopulatedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FibonacciHeap" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CircularDoublyLinkedListTests" />
-      <option name="METHOD_NAME" value="insertAddToPopulatedListTest" />
+      <option name="METHOD_NAME" value="removeNodeFromPopulatedListTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CircularDoublyLinkedListTests.removeNodeNotInPopulatedListSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FibonacciHeap" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CircularDoublyLinkedListTests" />
+      <option name="METHOD_NAME" value="removeNodeNotInPopulatedListSizeTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -576,19 +567,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToEmptyTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToEmptySizeTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToPopulatedListSizeTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToPopulatedListTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeStartFromTwoNodeList" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeEndFromTwoNodeList" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeEndFromPopulatedListSizeTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeNodeFromPopulatedListTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeNodeNotInPopulatedListSizeTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToPopulatedListSizeTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToPopulatedListTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToEmptyTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.insertAddToEmptySizeTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeNodeFromPopulatedListTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeNodeNotInPopulatedListSizeTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeEndFromPopulatedListSizeTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeEndFromTwoNodeList" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CircularDoublyLinkedListTests.removeStartFromTwoNodeList" />
       </list>
     </recent_temporary>
   </component>
@@ -606,35 +597,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CircularDoublyLinkedListTests - 2017.09.14 at 00h 56m 19s.xml">
-      <configuration name="CircularDoublyLinkedListTests" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeEndFromPopulatedListSizeTest - 2017.09.14 at 13h 32m 59s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeEndFromPopulatedListSizeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToEmptySizeTest - 2017.09.14 at 00h 54m 34s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToEmptySizeTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeEndFromTwoNodeList - 2017.09.14 at 13h 29m 48s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeEndFromTwoNodeList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToEmptyTest - 2017.09.14 at 00h 54m 38s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToEmptyTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeFromOneNodeListTest - 2017.09.14 at 13h 22m 23s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeFromOneNodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToOneMemberListTest - 2017.09.14 at 00h 50m 42s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToOneMemberListTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeFromTwoNodeListTest - 2017.09.14 at 13h 23m 57s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeFromTwoNodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToOneMemberListTest - 2017.09.14 at 00h 51m 40s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToOneMemberListTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeFromTwoNodeListTest - 2017.09.14 at 13h 27m 09s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeFromTwoNodeListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToOneMemberListTest - 2017.09.14 at 00h 52m 23s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToOneMemberListTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeNodeFromPopulatedListTest - 2017.09.14 at 14h 06m 09s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeNodeFromPopulatedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToPopulatedListSizeTest - 2017.09.14 at 01h 00m 22s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToPopulatedListSizeTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeNodeFromPopulatedListTest - 2017.09.14 at 14h 11m 01s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeNodeFromPopulatedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToPopulatedListSizeTest - 2017.09.14 at 01h 00m 33s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToPopulatedListSizeTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeNodeNotInPopulatedListSizeTest - 2017.09.14 at 14h 07m 47s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeNodeNotInPopulatedListSizeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToPopulatedListSizeTest - 2017.09.14 at 01h 05m 42s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToPopulatedListSizeTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeNodeNotInPopulatedListSizeTest - 2017.09.14 at 14h 10m 19s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeNodeNotInPopulatedListSizeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularDoublyLinkedListTests_insertAddToPopulatedListTest - 2017.09.14 at 01h 05m 36s.xml">
-      <configuration name="CircularDoublyLinkedListTests.insertAddToPopulatedListTest" configurationId="JUnit" />
+    <history-entry file="CircularDoublyLinkedListTests_removeStartFromTwoNodeList - 2017.09.14 at 13h 28m 51s.xml">
+      <configuration name="CircularDoublyLinkedListTests.removeStartFromTwoNodeList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -659,13 +650,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -685,7 +676,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -696,9 +687,84 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/HeapNode.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CircularDoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/NodeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/FibonacciHeapTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HeapNode.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -730,7 +796,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -784,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,17 +880,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeapNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="306">
           <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="e#289#290#0" expanded="true" />
@@ -839,8 +899,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/CircularDoublyLinkedListTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="84">
+          <caret line="135" column="75" lean-forward="false" selection-start-line="135" selection-start-column="75" selection-end-line="135" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#265#266#0" expanded="true" />
@@ -851,19 +911,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CircularDoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        <state relative-caret-position="1428">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HeapNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
           </folding>
         </state>
       </provider>

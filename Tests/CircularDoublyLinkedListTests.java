@@ -71,11 +71,92 @@ public class CircularDoublyLinkedListTests {
 
     }
 
+    @Test
+    public void removeFromEmptyListSizeTest(){
+        list.remove(new ListNode(new HeapNode(4)));
+
+        Assert.assertTrue(list.size() == 0);
+    }
+
+    @Test
+    public void removeFromOneNodeListSizeTest(){
+        insertOneNodeIntoList();
+        list.remove(testNode);
+
+        Assert.assertTrue(list.size() == 0);
+    }
+
+    @Test
+    public void removeFromOneNodeListTest(){
+        insertOneNodeIntoList();
+        list.remove(testNode);
+
+        Assert.assertTrue(list.start() == null && list.end() == null);
+    }
+
+    @Test
+    public void removeFromTwoNodeListTest(){
+        insertTwoNodesIntoList();
+        list.remove(testNode);
+
+        Assert.assertTrue(list.start().next() != testNode && list.start().prev() != testNode);
+    }
+
+    @Test
+    public void removeStartFromTwoNodeList(){
+        insertOneNodeIntoList();
+        list.insert(new ListNode(new HeapNode(3)));
+        list.remove(testNode);
+
+        Assert.assertTrue("start not updated", list.start() != testNode && list.start().next() == list.start());
+    }
+
+    @Test
+    public void removeEndFromTwoNodeList(){
+        insertTwoNodesIntoList();
+        list.remove(testNode);
+
+        Assert.assertTrue("end not updated", list.end() != testNode && list.end().next() == list.end());
+    }
+
+    @Test
+    public void removeNodeFromPopulatedListSizeTest(){
+        randomlyPopulateList();
+        int size = list.size();
+        list.remove(testNode);
+
+        Assert.assertTrue("size not decremented", list.size() == size - 1);
+    }
+
+    @Test
+    public void removeNodeFromPopulatedListTest(){
+        randomlyPopulateList();
+        list.remove(testNode);
+
+        Assert.assertTrue("node not removed from list", !list.find(testNode));
+    }
+
+    @Test
+    public void removeNodeNotInPopulatedListSizeTest(){
+        randomlyPopulateList();
+        int size = list.size();
+        list.remove(new ListNode(new HeapNode(99)));
+
+        Assert.assertTrue(size == list.size());
+    }
+
     public void randomlyPopulateList(){
         int numberOfNodes = (int)(Math.random() * 50000);
 
         for(int i = 0; i < numberOfNodes; i++){
-            list.insert(new ListNode(new HeapNode((int)Math.random() * 2000)));
+            if(i == (numberOfNodes-1) % 200){
+                testNode = new ListNode(new HeapNode((int)Math.random() * 2000));
+                list.insert(testNode);
+            }
+            else{
+                list.insert(new ListNode(new HeapNode((int)Math.random() * 2000)));
+
+            }
         }
     }
 }
