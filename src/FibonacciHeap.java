@@ -18,7 +18,7 @@ public class FibonacciHeap {
     }
 
     public int size(){
-        return rootList.size();
+        return size;
     }
 
     public CircularDoublyLinkedList getRootList(){
@@ -32,9 +32,10 @@ public class FibonacciHeap {
             min = node;
 
         rootList.insert(node);
+        incrementSize();
     }
 
-    public void pop(){
+    public HeapNode pop(){
         /*
         * move all children of min to root list
         * remove min from root list store in variable
@@ -42,9 +43,31 @@ public class FibonacciHeap {
         * update min
         * return previous min
         * */
+        HeapNode currentMin = min();
+
+        return currentMin;
     }
 
     public void moveMinChildrenToRootList(){
+        CircularDoublyLinkedList minChildList = min().getChildList();
+        while(!minChildList.isEmpty()){
+            HeapNode child = minChildList.start().getData();
+            minChildList.remove(child);
+            moveChildToRootList(child);
+        }
 
+    }
+
+    private void moveChildToRootList(HeapNode child){
+        this.insert(child);
+        decrementSize();
+    }
+
+    private void incrementSize(){
+        size++;
+    }
+
+    private void decrementSize(){
+        size--;
     }
 }
