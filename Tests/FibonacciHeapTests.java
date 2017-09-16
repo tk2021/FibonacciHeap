@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class FibonacciHeapTests {
     FibonacciHeap heap;
@@ -119,7 +120,102 @@ public class FibonacciHeapTests {
     }
 
     @Test
-    public void 
+    public void consolidateTwoNodesOfZeroDegreeSizeTest(){
+        insertOneNode(5);
+        insertOneNode(3);
+
+        heap.consolidate();
+
+        Assert.assertTrue("size not updated after merge should be 1 but its " + heap.getRootList().size(), heap.getRootList().size() == 1);
+    }
+
+    @Test
+    public void consolidateTwoNodesOfZeroDegreeMaxMergedOntoMinTest(){
+        insertOneNode(5);
+        insertOneNode(3);
+
+        heap.consolidate();
+
+        Assert.assertTrue("nodes of zero degree not merged",heap.getRootList().start().getData() == testNode);
+    }
+
+    @Test
+    public void consolidateTwoNodesOfZeroDegreeMakeNodeOfOneDegreeTest(){
+        insertOneNode(5);
+        insertOneNode(3);
+
+        heap.consolidate();
+
+        Assert.assertTrue("node merged onto does not have a degree of one",heap.getRootList().start().getData().degree() == 1);
+    }
+
+    @Test
+    public void consolidate31NodesSizeTest(){
+        insert31NodesAndConsolidateThem();
+        heap.printTree();
+
+        Assert.assertTrue("size of heap.rootlist is incorrectly updated; should be 5 but is " + heap.getRootList().size(), heap.getRootList().size() == 5);
+    }
+
+    @Test
+    public void consolidate31NodesTest(){
+        insert31NodesAndConsolidateThem();
+
+        Assert.assertTrue("heap does not merge 31 nodes of degree 0 and produce 5 nodes of degrees 4,3,2,1,0" , checkRootListForCorrectDegreesAfter31NodesConsolidate());
+    }
+
+    @Test
+    public void populateListAndPopAllNodesEnsureTheyAreInSortedOrder(){
+        randomlyPopulateHeap(10);
+        boolean currentNodeIsGTEPrevious = true;
+        HeapNode current = heap.min();
+        HeapNode prev = heap.min();
+        while(heap.size() > 0){
+            System.out.println("\nsize: " + heap.size() + "\n");
+            heap.printTree();
+            prev = current;
+            current = heap.pop();
+            currentNodeIsGTEPrevious = currentNodeIsGTEPrevious && prev.getData() <= current.getData();
+        }
+
+        Assert.assertTrue("nodes were not popped in reverse sorted order", currentNodeIsGTEPrevious);
+    }
+
+    public boolean checkRootListForCorrectDegreesAfter31NodesConsolidate(){
+        ListNode current = heap.getRootList().start();
+        ListNode start = heap.getRootList().start();
+        HashMap<Integer, Boolean> degreeMap = new HashMap<>();
+        degreeMap.put(4, true);
+        degreeMap.put(3, true);
+        degreeMap.put(2, true);
+        degreeMap.put(1, true);
+        degreeMap.put(0, true);
+
+        boolean all5NodesAreOfCorrectDegree = true;
+
+        do{
+            HeapNode node = current.getData();
+            int degreeOfCurrent = node.degree();
+            all5NodesAreOfCorrectDegree = all5NodesAreOfCorrectDegree && degreeMap.get(degreeOfCurrent);
+            degreeMap.put(degreeOfCurrent, false);
+        }while(current != start);
+
+        return all5NodesAreOfCorrectDegree;
+    }
+
+    /*
+    * Inserts 31 nodes into the heap root list
+    * Calls consolidate()
+    * new root list has 5 nodes of degrees: 4, 3, 2, 1, 0
+     */
+    public void insert31NodesAndConsolidateThem(){
+        for(int i = 0; i < 31; i++){
+            int value = (int)(Math.random() * 200000);
+            HeapNode node = new HeapNode(value);
+            heap.insert(node);
+        }
+        heap.consolidate();
+    }
 
     /*
     * Adds input number of children to min node in heap
@@ -134,7 +230,7 @@ public class FibonacciHeapTests {
         ArrayList<HeapNode> nodesAddedToRoot = new ArrayList<>();
 
         for(int i = 0; i < numberOfChildren; i++){
-            int value = (int)Math.random() * 200000;
+            int value = (int)(Math.random() * 200000);
             child = new HeapNode(value);
             nodesAddedToRoot.add(child);
             heap.min().getChildList().insert(child);
@@ -152,10 +248,10 @@ public class FibonacciHeapTests {
         minValue = Integer.MAX_VALUE;
 
         for(int i = 0; i < numberOfNodes; i++){
-            int value = (int)Math.random() * 200000;
+            int value = (int)(Math.random() * 200000);
             if(value < minValue)
                 minValue = value;
-            if(i == (numberOfNodes-1) % (numberOfNodes/5)){
+            if(i == (numberOfNodes-1) % ((numberOfNodes/5) + 1)){
                 testNode = new HeapNode(value);
                 heap.insert(testNode);
             }
