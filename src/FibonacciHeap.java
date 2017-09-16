@@ -33,4 +33,18 @@ public class FibonacciHeap {
 
         rootList.insert(node);
     }
+
+    public void pop(){
+        /*
+        * move all children of min to root list
+        * remove min from root list store in variable
+        * combine nodes in root list of like degree
+        * update min
+        * return previous min
+        * */
+    }
+
+    public void moveMinChildrenToRootList(){
+
+    }
 }

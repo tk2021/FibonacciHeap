@@ -66,6 +66,11 @@ public class FibonacciHeapTests {
         Assert.assertTrue("min not maintained", heap.min().getData() == minValue);
     }
 
+    @Test
+    public void moveChildrenOfMinToRootListDegreeOfMinTest(){
+        int degree = heap.min().degree();
+    }
+
     public void randomlyPopulateHeap(int numberOfNodes){
         minValue = Integer.MAX_VALUE;
 
